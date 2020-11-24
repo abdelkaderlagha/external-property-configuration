@@ -21,6 +21,7 @@ public class PropertyConfig {
     @Value("${gadour.dburl}")
     String dburl;
 
+    @Bean
     public FakeDataSource fakeDataSource(){
         FakeDataSource fakeDataSource = new FakeDataSource();
 
